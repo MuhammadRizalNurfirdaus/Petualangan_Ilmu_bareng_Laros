@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".Frame1Activity">
+
+    <!-- Background image full-bleed like frame_1 design for Pixel 9 Pro XL -->
+
+    <!-- Tombol PLAY: diposisikan di tengah sesuai desain Frame_1 -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Background"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="198dp"
+        android:layout_height="84dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="280:110"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30" />
+
+    <!-- Tidak ada overlay lain: semua elemen sudah tergambar di frame_1 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

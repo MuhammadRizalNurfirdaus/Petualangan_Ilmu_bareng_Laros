@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".Frame7Activity">
+
+    <!-- Fullscreen artwork for Frame 7 (frame_10) -->
+    <ImageView
+        android:id="@+id/ivFrame7Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_10" />
+
+    <!-- Area overlay yang menangkap ketukan di mana saja -->
+    <View
+        android:id="@+id/tapToCloseOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+</FrameLayout>

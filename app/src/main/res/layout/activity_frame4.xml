@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frame4Activity">
+
+    <ImageView
+        android:id="@+id/bgFrame4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/frame_4"
+        android:scaleType="fitXY"
+        android:contentDescription="Frame 4 Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Guidelines untuk menyamakan posisi dengan latar dan batasi lebar -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4_username_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4_password_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41294643" />
+
+    <!-- Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginUsernameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#1976D2"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:hintTextColor="#1565C0"
+        android:hint="Username"
+        app:layout_constraintStart_toStartOf="@id/g4_left"
+        app:layout_constraintEnd_toEndOf="@id/g4_right"
+        app:layout_constraintTop_toTopOf="@id/g4_username_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:imeOptions="flagNoExtractUi|actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password with toggle -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginPasswordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#1976D2"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#1976D2"
+        app:hintTextColor="#1565C0"
+        android:hint="Password"
+        app:layout_constraintStart_toStartOf="@id/g4_left"
+        app:layout_constraintEnd_toEndOf="@id/g4_right"
+        app:layout_constraintTop_toTopOf="@id/g4_password_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Masuk button -->
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:layout_width="207dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="68dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Masuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginPasswordLayout"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frame2Activity">
+
+    <!-- Background image for Frame 2 -->
+    <ImageView
+        android:id="@+id/bgFrame2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/frame_2"
+        android:contentDescription="Frame 2 Background"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button Masuk -->
+
+    <!-- Button Daftar -->
+
+    <ImageButton
+        android:id="@+id/btnMasuk"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="600:180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40" />
+
+    <ImageButton
+        android:id="@+id/btnDaftar"
+        android:layout_width="197dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="600:180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMasuk"
+        app:layout_constraintVertical_bias="0.509"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

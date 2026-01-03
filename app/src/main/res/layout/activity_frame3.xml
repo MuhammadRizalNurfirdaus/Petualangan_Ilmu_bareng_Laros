@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frame3Activity">
+
+    <!-- Background full-screen persis seperti desain -->
+    <ImageView
+        android:id="@+id/bgFrame3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Frame 3 Background"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Guidelines untuk menyamakan posisi dengan gambar latar (tuning persen sesuai kebutuhan) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_username_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="112dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_password_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <!-- Foto profil opsional di kiri atas -->
+
+    <!-- Username -->
+
+    <!-- Password dengan ikon mata -->
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Tambah foto (opsional)"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="#1976D2"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:hintTextColor="#1565C0"
+        android:hint="Username"
+        app:layout_constraintStart_toStartOf="@id/g_left"
+        app:layout_constraintEnd_toEndOf="@id/g_right"
+        app:layout_constraintTop_toTopOf="@id/g_username_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="flagNoExtractUi|actionNext"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tombol Daftar: overlay transparan di atas gambar tombol -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#1976D2"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#1976D2"
+        app:hintTextColor="#1565C0"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@id/g_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/g_left"
+        app:layout_constraintTop_toTopOf="@id/g_password_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btnRegister"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="108dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="Daftar"
+        android:focusable="true"
+        android:src="@android:color/transparent"
+        app:layout_constraintDimensionRatio="600:180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.35" />
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Fullscreen artwork for Frame 7 -->
+
+    <!-- Tombol Mengenal Hewan (area klik transparan di atas desain frame_7) -->
+    <ImageView
+        android:id="@+id/ivFrame7Background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnMengenalHewan"
+        android:layout_width="125dp"
+        android:layout_height="111dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageButton
+        android:id="@+id/btnMengenalTataSurya"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <ImageButton
+        android:id="@+id/btnQuiz"
+        android:layout_width="139dp"
+        android:layout_height="103dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Quiz Button"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Exit Button"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Profile Button"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

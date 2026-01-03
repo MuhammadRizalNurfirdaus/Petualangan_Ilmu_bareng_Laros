@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Petualangan_Ilmu_bareng_Laros">
+        <!-- Jadikan Frame1Activity sebagai layar pertama (launcher) -->
+        <activity
+            android:name=".Frame1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame11Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame12Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame13Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame14Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame15Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame16Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame17Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame18Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame19Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame20Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame21Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Frame22Activity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frame6Activity">
+
+    <!-- Fullscreen artwork for Frame 6 (frame_9) -->
+
+    <!-- Tombol untuk pindah ke Frame7 (tampilan frame_10) -->
+
+    <!-- Tombol baru untuk pindah ke Frame8 (tampilan frame_11) -->
+
+    <ImageView
+        android:id="@+id/ivFrame6Background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnToFrame7"
+        android:layout_width="209dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="52dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/buka_frame7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <ImageButton
+        android:id="@+id/btnToFrame8"
+        android:layout_width="152dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <!-- Tombol baru untuk pindah ke Frame9 (tampilan frame_12) -->
+
+    <ImageButton
+        android:id="@+id/btnToFrame9"
+        android:layout_width="188dp"
+        android:layout_height="171dp"
+        android:layout_marginEnd="420dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <!-- Tombol baru untuk pindah ke Frame10 (tampilan frame_13) -->
+
+    <ImageButton
+        android:id="@+id/btnToFrame10"
+        android:layout_width="200dp"
+        android:layout_height="168dp"
+        android:layout_marginEnd="220dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <!-- Tombol baru untuk pindah ke Frame11 (tampilan frame_14) -->
+
+    <ImageButton
+        android:id="@+id/btnToFrame11"
+        android:layout_width="174dp"
+        android:layout_height="176dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="57dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="888dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/kembali_ke_beranda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
